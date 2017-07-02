@@ -14,7 +14,7 @@ svn co https://svn.cms.waikato.ac.nz/svn/weka/trunk/weka/
 ant -f weka/build.xml exejar
 ```
 
-* Install AffectiveTweets using the weka gui [WekaPackageManager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F) or by command-lin
+* Install AffectiveTweets using the weka GUI [WekaPackageManager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F) or by command-lin
 
 ```bash
 java -cp weka.jar weka.core.WekaPackageManager -install-package AffectiveTweets
@@ -27,3 +27,17 @@ java -cp weka.jar weka.core.WekaPackageManager -install-package LibLINEAR
 java -cp weka.jar weka.core.WekaPackageManager -install-package LibSVM
 java -cp weka.jar weka.core.WekaPackageManager -install-package RankCorrelation
 ```
+### Usage
+
+* Open up 11_NRC_on_csv.r in R studio or whichever editor you feel comfortable. There is two input path you should change before runing the code. 
+
+############################################################
+folderpath = "C:/Users/zzz19/Documents/work/tweets/Weekly_tweets_Oct31_Nov06/"
+output_folder = "C:/Users/zzz19/Documents/work/tweets/output/"
+############################################################
+
+* please change the folderpath to the path of folder contains tweets csv files. Note that avoid backslash in windows.
+* please change the output_folder to the path of folder you want to store your results.
+
+* The code will convert the original csv file to an ARFF file for weka to process then output the NRC result with 11 lexicons. 
+THe result would have one column for original text and 43 columns for emotion scores and sentiment scores. Note that the order of the tweets won't change during the process, free feel to merge the results back to the original tweets files by index.
