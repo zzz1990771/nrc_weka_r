@@ -41,6 +41,10 @@ output_folder = "C:/Users/zzz19/Documents/work/tweets/output/"
 
 * please change the folderpath to the path of folder contains tweets csv files. Note that avoid backslash in windows.
 * please change the output_folder to the path of folder you want to store your results.
+* modify the code if you want, then run!
 
-* The code will convert the original csv file to an ARFF file for weka to process then output the NRC result with 11 lexicons. 
-THe result would have one column for original text and 43 columns for emotion scores and sentiment scores. Note that the order of the tweets won't change during the process, free feel to merge the results back to the original tweets files by index.
+### Description
+
+* The code will convert the original csv file to an ARFF file for weka to process then, output the NRC result with 11 lexicons to defined folder with the same filename. 
+* THe result would have one column for original text and 43 columns for emotion scores and sentiment scores. 
+* Note that the order of the tweets won't change during the process, free feel to merge the results back to the original tweets files by index.
