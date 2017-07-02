@@ -6,7 +6,7 @@ This repo was created for apply NRC lexicons to tweets using [AffectiveTweets](h
 The standard processure recommended by NRC is currently for Python only. For the need of our research with R, A wrapped R code was developed with AffectiveTweets in this repo.
 
 ### Prerequisites
-* Download the latest stable [version](http://www.cs.waikato.ac.nz/ml/weka/downloading.html) or the  developer [branch](http://www.cs.waikato.ac.nz/ml/weka/snapshots/weka_snapshots.html) of Weka.
+* Download the latest stable [version](http://www.cs.waikato.ac.nz/ml/weka/downloading.html) (recommended for Windows user) or the  developer [branch](http://www.cs.waikato.ac.nz/ml/weka/snapshots/weka_snapshots.html) of Weka.
 You can also build the developer branch from the SVN repository: 
 
 ```bash
@@ -14,7 +14,7 @@ svn co https://svn.cms.waikato.ac.nz/svn/weka/trunk/weka/
 ant -f weka/build.xml exejar
 ```
 
-* Install AffectiveTweets using the [WekaPackageManager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F): 
+* Install AffectiveTweets using the weka gui [WekaPackageManager](http://weka.wikispaces.com/How+do+I+use+the+package+manager%3F) or by command-lin
 
 ```bash
 java -cp weka.jar weka.core.WekaPackageManager -install-package AffectiveTweets
