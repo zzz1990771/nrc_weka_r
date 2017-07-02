@@ -32,8 +32,11 @@ java -cp weka.jar weka.core.WekaPackageManager -install-package RankCorrelation
 * Open up 11_NRC_on_csv.r in R studio or whichever editor you feel comfortable. There is two input path you should change before runing the code. 
 
 ############################################################
+
 folderpath = "C:/Users/zzz19/Documents/work/tweets/Weekly_tweets_Oct31_Nov06/"
+
 output_folder = "C:/Users/zzz19/Documents/work/tweets/output/"
+
 ############################################################
 
 * please change the folderpath to the path of folder contains tweets csv files. Note that avoid backslash in windows.
